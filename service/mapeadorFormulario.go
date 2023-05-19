@@ -1,13 +1,12 @@
-package main
+package service
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"strings"
 )
 
-func mapearFormulario() []string {
+func MapearFormulario() []string {
 
 	//Ler o arquivo
 	conteudoDoFormulario, err := os.ReadFile("formulario.txt")
@@ -28,10 +27,9 @@ func mapearFormulario() []string {
 	}
 
 	//Percorre e imprime na tela
-	for _, pergunta := range slicePerguntas {
-		fmt.Println(pergunta)
+	//for _, pergunta := range slicePerguntas {
+	//	fmt.Println(pergunta)
+	//}
 
-	}
-
-	return slicePerguntas;
+	return slicePerguntas
 }

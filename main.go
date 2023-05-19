@@ -1,6 +1,7 @@
 package main
 
 import (
+	"desafio-leitor-arquivos-go/service"
 	"fmt"
 )
 
@@ -14,10 +15,10 @@ func main() {
 
 	switch entradaUsuario {
 	case 1:
-		cadastraCandidato()
+		service.CadastrarCandidato()
 	case 2:
-		mapearFormulario()
-		//fmt.Println("Chamou o 2")
+		service.MapearFormulario()
+		fmt.Println("Chamou exibir formulários")
 	}
 
 }
