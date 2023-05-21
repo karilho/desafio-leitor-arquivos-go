@@ -1,4 +1,0 @@
-1 - Qual seu nome?
-2 - Qual seu e-mail
-3 - Qual sua idade?
-4 - Qual sua cidade?

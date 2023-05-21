@@ -1,6 +1,7 @@
 package service
 
 import (
+	"fmt"
 	"log"
 	"os"
 	"strings"
@@ -19,8 +20,9 @@ func MapearFormulario() []string {
 	var slicePerguntas []string
 
 	//Percorre e adiciona no slice
-	for _, pergunta := range stringsPerguntas {
+	for i, pergunta := range stringsPerguntas {
 		pergunta = strings.TrimSpace(pergunta)
+		pergunta = strings.TrimPrefix(pergunta, fmt.Sprintf("%d - ", i+1))
 		if pergunta != "" {
 			slicePerguntas = append(slicePerguntas, pergunta)
 		}
@@ -30,6 +32,6 @@ func MapearFormulario() []string {
 	//for _, pergunta := range slicePerguntas {
 	//	fmt.Println(pergunta)
 	//}
-
+	//fmt.Println(slicePerguntas)
 	return slicePerguntas
 }
