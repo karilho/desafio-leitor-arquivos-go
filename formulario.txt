@@ -2,3 +2,5 @@
 2 - Qual seu e-mail
 3 - Qual sua idade?
 4 - Qual sua cidade?
+5 - Qual a sua loucura?
+6 - Qual seu bairro?
