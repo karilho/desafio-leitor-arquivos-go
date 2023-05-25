@@ -108,6 +108,6 @@ func MapearFormulario() []string {
 		}
 	}
 
-	fmt.Println(slicePerguntas)
+	//fmt.Println(slicePerguntas)
 	return slicePerguntas
 }

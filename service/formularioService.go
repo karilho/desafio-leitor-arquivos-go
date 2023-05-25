@@ -49,6 +49,11 @@ func RemoverPergunta() {
 	var numeroPerguntaRemover int
 	fmt.Scan(&numeroPerguntaRemover)
 	numeroPerguntaRemover--
+
+	if numeroPerguntaRemover < 4 || numeroPerguntaRemover > len(perguntas) {
+		fmt.Println("Não é possível remover as perguntas de 1 a 4, por favor, digite um número válido.")
+		RemoverPergunta()
+	}
 	perguntas = append(perguntas[:numeroPerguntaRemover], perguntas[numeroPerguntaRemover+1:]...)
 
 	fmt.Println("Pergunta removida com sucesso!")

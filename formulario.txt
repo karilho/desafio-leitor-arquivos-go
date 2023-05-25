@@ -1,6 +1,6 @@
-1 - Qual seu nome?
-2 - Qual seu e-mail
+1 - Qual o seu nome completo?
+2 - Qual seu e-mail?
 3 - Qual sua idade?
-4 - Qual sua cidade?
-5 - Qual a sua loucura?
-6 - Qual seu bairro?
+4 - Qual seu whatsapp ou celular?
+5 - Qual sua moradia?
+6 - Qual Seu estado?
