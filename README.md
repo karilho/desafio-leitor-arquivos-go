@@ -1,6 +1,6 @@
 ## Desafio Leitor de Arquivos Go ##
 
-A ideia deste desafio é replicar um desafio que eu realizei durante o processo seletivo da empresa [Bluesoft](https://bluesoft.com.br/).
+A ideia deste desafio é replicar um desafio que eu realizei durante o programa MOVIMENTO CODAR da [Bluesoft](https://bluesoft.com.br/).
 
 Originalmente, o desafio foi feito em Java, mas eu decidi replicá-lo em Go, para fins de aprendizado.
 
