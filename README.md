@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # desafio-leitor-arquivos-go
 Criação de desafio de ler e escrever arquivos .txt com GO
 =======
@@ -104,4 +103,3 @@ Lembre-se que o que define a unicidade de um cadastro no seu sistema é o nome d
  - COLOCAR LOGS EM TODO O PROJETO PARA PODER VER EM MONITORAMENTO.
 
  - MAPEAR DE TXT PARA JSON
->>>>>>> new/inicial
