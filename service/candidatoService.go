@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"desafio-leitor-arquivos-go/utils"
 	"fmt"
+	"log"
 	"os"
 	"path/filepath"
 	"strconv"
@@ -54,6 +55,17 @@ func CadastrarCandidato() {
 	}
 
 	defer arquivo.Close()
+
+	// Specify the path of the file you want to upload
+	filePath := "formulario.txt"
+
+	// Upload the file to S3
+	err = utils.UploadFile(utils.AWS_S3_BUCKET, filePath, utils.AWS_S3_REGION)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("File uploaded successfully!")
 
 	fmt.Println("Candidato cadastrado com sucesso!")
 
