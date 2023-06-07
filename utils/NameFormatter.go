@@ -8,7 +8,7 @@ import (
 
 func NameFormater(name string) string {
 	name = strings.ReplaceAll(name, " ", "")
-	name = strings.ToUpper(name)
+	//name = strings.ToUpper(name)
 	name = unidecode.Unidecode(name)
 	name = unidecode.Unidecode(name)
 	fmt.Println(name + ".txt")

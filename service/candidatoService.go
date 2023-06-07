@@ -57,7 +57,7 @@ func CadastrarCandidato() {
 	defer arquivo.Close()
 
 	// Specify the path of the file you want to upload
-	filePath := "formulario.txt"
+	filePath := nomeArquivo
 
 	// Upload the file to S3
 	err = utils.UploadFile(utils.AWS_S3_BUCKET, filePath, utils.AWS_S3_REGION)
@@ -115,7 +115,6 @@ func EncontrarCndDuplicados() {
 			for _, candidato := range duplicados {
 				fmt.Println("Nome: " + candidato.Nome)
 				fmt.Println("Email: " + candidato.Email)
-				// Exibir outras informações relevantes do candidato, se necessário
 				fmt.Println()
 			}
 		}

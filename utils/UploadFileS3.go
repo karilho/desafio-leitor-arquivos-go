@@ -7,6 +7,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"os"
+	"path/filepath"
 )
 
 const (
@@ -42,10 +43,12 @@ func UploadFile(bucketName, filePath string, region string) error {
 	fileInfo, _ := file.Stat()
 	var _ int64 = fileInfo.Size()
 
+	filename := filepath.Base(filePath)
+
 	// Create an S3 upload input object
 	input := &s3.PutObjectInput{
 		Bucket: aws.String(bucketName),
-		Key:    aws.String(file.Name()),
+		Key:    aws.String(filename),
 		Body:   file,
 		ACL:    aws.String("public-read"), // Set the ACL to public-read if you want the uploaded file to be publicly accessible
 	}
